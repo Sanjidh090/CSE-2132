@@ -49,11 +49,9 @@ public:
     float getA() {
         return a;
     }
-
     float getB() {
         return b;
     }
-
     float getC() {
         return c;
     }
