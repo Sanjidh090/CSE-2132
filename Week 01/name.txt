@@ -1,1 +1,1 @@
-Introducing with function and arrays
+Introducing with function and arrays of C as a reminder of C++
