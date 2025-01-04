@@ -16,7 +16,7 @@ int main()
 
 string line;
 ifstream read;
-read.open("Student.txt");
+read.open("Students.txt");
 getline(read,line);
 cout<< line << endl;
 read.close();
