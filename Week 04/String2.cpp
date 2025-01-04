@@ -1,19 +1,21 @@
 #include <iostream>
 #include <string>
 
-int main() {
-    std::string s;
-    std::string s1("hello");
-    std::string s2 = "hello";
-    std::string s3(8, 'x');
-    std::string s4 = s3;
-    std::string s5(s2, 3, 2); // Extracts substring from s2 starting at index 3 with length 2
+using namespace std;
 
-    std::cout << "s1: " << s1 << std::endl;
-    std::cout << "s2: " << s2 << std::endl;
-    std::cout << "s3: " << s3 << std::endl;
-    std::cout << "s4: " << s4 << std::endl;
-    std::cout << "s5: " << s5 << std::endl;
+int main() {
+    string s;
+    string s1("hello");
+    string s2 = "hello";
+    string s3(8, 'x');
+    string s4 = s3;
+    string s5(s2, 3, 2); // Extracts substring from s2 starting at index 3 with length 2
+
+    cout << "s1: " << s1 << endl;
+    cout << "s2: " << s2 << endl;
+    cout << "s3: " << s3 << endl;
+    cout << "s4: " << s4 << endl;
+    cout << "s5: " << s5 << endl;
 
     return 0;
 }
