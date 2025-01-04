@@ -2,7 +2,8 @@
 #include <string>
 using namespace std;
 
-int main(){
+int main()
+{
     string s;
     s = "Hello World!";
     string s1;
