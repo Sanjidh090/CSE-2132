@@ -1,8 +1,9 @@
-//to store data parmanently
+//fli is used to store data parmanently
 #include <iostream>
 #include <fstream>
 #include <string>
-using namespace std;
+using namespace std;
+
 int main()
 {
     ofstream write;
