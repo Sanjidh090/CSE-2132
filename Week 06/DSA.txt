@@ -1,0 +1,35 @@
+Way of organizing data
+access
+use
+
+Type of Data Structure
+1 linear -> the type we see norally
+[1 2 3 4]
+features
+1.precedor?
+2.successor
+.......
+.......................
+.........................................
+static,dynamic
+array --->>> linear static data Structure 
+stack,linked list, queue -->> linear dynamic data Structure
+
+
+
+array is faster,accessed by indexing of loop
+Searchinh...............linear Searchinh
+create,traverse,update,search operation
+,insert,delete operation
+
+
+
+declaration \'''
+data_type [x,y] = {};
+
+traverse
+????
+search]
+1.check id exists
+then we can use linear search
+
