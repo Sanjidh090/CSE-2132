@@ -20,7 +20,7 @@ public:
             return;
         }
         if (front == -1) {      
-            front = 0;           // Set front to 0 to mark the start of the queue
+            front = 0;           // Set front to 0 to mark the start of the queue 
         }
         rear++;             
         arr[rear] = value;    
