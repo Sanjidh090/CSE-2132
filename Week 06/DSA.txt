@@ -6,7 +6,7 @@ Type of Data Structure
 1 linear -> the type we see norally
 [1 2 3 4]
 features
-1.precedor?
+1.predecessor
 2.successor
 .......
 .......................
