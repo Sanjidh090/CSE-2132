@@ -3,22 +3,23 @@ using namespace std;
 
 int main()
 {
-    int arr[] = {10,20,0,40,50};
-    int i = 0;
-    //cout << arr[3] << endl;
-    for(i = 0; i <= 4; i++)
-    {
+    int arr[] = {10, 20, 0, 40, 50, 50};
+    int key = 60;
+    bool found = false;
 
-        if (arr[i] == 30)
+    for(int i = 0; i < 6; i++)  // Iterate over all elements
+    {
+        if (arr[i] == key)
         {
-            cout << "30 is present";
-            break;
+            cout << key << " is present at index " << i << endl;
+            found = true;
         }
-        if ( i == 6)
-        {
-            cout << " 30 is not present ";
-        }
-        //cout << i << " th element and value "<< " " << arr[i] << endl;
     }
+
+    if (!found)
+    {
+        cout << key << " is not present" << endl;
+    }
+    
     return 0;
 }
