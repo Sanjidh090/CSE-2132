@@ -1,22 +1,26 @@
 #include <iostream>
 using namespace std;
 
-void selectionSort(int arr[], int n) {
-    for (int i = 0; i < n - 1; i++) {
-        int min_index = i;  // Start with the first unsorted element
+// Function to perform insertion sort on an array
+void insertionSort(int arr[], int n) {
+    // Loop through the array starting from the second element
+    for (int i = 1; i < n; i++) {
+        int key = arr[i];  // The current element to be inserted
+        int j = i - 1;     // Compare with the previous elements
 
-        // Find the smallest element in the unsorted part of the array
-        for (int j = i + 1; j < n; j++) {
-            if (arr[j] < arr[min_index]) {
-                min_index = j;  // Update the index of the smallest element
-            }
+        // Move elements of arr[0..i-1] that are greater than the key
+        // to one position ahead of their current position
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j--;
         }
 
-        // Swap the smallest element with the first unsorted element
-        swap(arr[i], arr[min_index]);
+        // Insert the key at the correct position
+        arr[j + 1] = key;
     }
 }
 
+// Function to print the elements of the array
 void printArray(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
@@ -25,14 +29,17 @@ void printArray(int arr[], int n) {
 }
 
 int main() {
-    int arr[] = {64, 25, 12, 22, 11};
-    int n = sizeof(arr) / sizeof(arr[0]);  // Calculate the size of the array
+    int arr[] = {75, 60, 90, 80, 70};
+    int n = sizeof(arr) / sizeof(arr[0]);
 
+    // Print the original array
     cout << "Original array: ";
     printArray(arr, n);
 
-    selectionSort(arr, n);
+    // Sort the array using insertion sort
+    insertionSort(arr, n);
 
+    // Print the sorted array
     cout << "Sorted array: ";
     printArray(arr, n);
 
