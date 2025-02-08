@@ -27,6 +27,7 @@ public:
             top++;
             str[top] = value;
             sz++;
+            cout << value << " pushed to stack." << endl;
         }
     }
 
@@ -54,6 +55,7 @@ public:
         if (sz == 0) {
             cout << "Stack is empty." << endl;
         } else {
+            cout << "Stack elements: ";
             for (int i = 0; i <= top; i++) {
                 cout << str[i] << " ";
             }
@@ -71,16 +73,11 @@ int main() {
     cout << "Is the stack empty? " << (s.isempty() ? "Yes" : "No") << endl;  // Check if the stack is empty
 
     s.push(20);  // Push 20 to the stack
-    s.push(50);  // Push 50 to the stack
-    s.pop();  // Pop an element (50 will be removed)
-
-    s.traverse();  // Traverse and display the stack elements
-
-    cout << "heheehhe" << endl;  // Output a string message
-
+    s.push(50);  // Push 50 to the stack // Pop an element (50 will be removed)
+    s.push(10);  // Push 10 to the stack
+    s.traverse();  // Traverse and display the stack elements // Output a string message
     cout << "Popped element: " << s.pop() << endl;  // Pop another element (20 will be removed)
-
-    s.traverse();  // Traverse and display the stack elements after popping
+ // Traverse and display the stack elements after popping
 
     return 0;  // End the program
 }
