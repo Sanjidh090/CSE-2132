@@ -5,7 +5,6 @@ using namespace std;
 class Point {
 private:
     int x, y;
-
 public:
     void setX(int a) {
         x = a;
